@@ -7,7 +7,7 @@ class Header extends React.Component {
       <Container className="card-header">
         <Row>
           <Col>
-            <Card className="d-block">
+            <Card>
               <Card.Header>
                 <Card.Body>
                   <Card.Title>Welcome!</Card.Title>

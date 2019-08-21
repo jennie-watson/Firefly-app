@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Col, Nav, Row } from 'react-bootstrap'
+import { Container, Nav, Text } from 'react-bootstrap'
 import Sidebar from 'react-sidebar'
-// import { ReactComponent as Logo } from '../../server/public/Icons/ff_logo.svg'
+import Logo from './Logo'
 
 const mql = window.matchMedia(`(min-width: 800px)`)
 
@@ -37,14 +37,15 @@ class NavBar extends React.Component {
   render () {
     return (
       <Container className='vertical-sidebar'>
-        <Row>
-          {/* <Col> */}
-          <Sidebar
-            sidebar={
+        <Sidebar
+          sidebar={
         <>
         <div className="container">
-          {/* <Logo /> */}
-          <Nav.Link href="/home">Data Dashboard</Nav.Link>
+          <div className="sidebar-header">
+            <Logo />
+            <b>Data Dashboard</b>
+          </div>
+          {/* <img src={require('../../server/public/Images/ff_logo.png' /> */}
           <Nav.Link eventKey="/home">Overview</Nav.Link>
           <Nav.Link eventKey="/animals">Animals</Nav.Link>
           <Nav.Link eventKey="/food">Food</Nav.Link>
@@ -53,14 +54,12 @@ class NavBar extends React.Component {
           <Nav.Link eventKey="/logout">Logout</Nav.Link>
         </div>
         </>
-            }
-            open={this.state.sidebarOpen}
-            docked={this.state.sidebarDocked}
-            onSetOpen={this.onSetSidebarOpen}
-          >
-          </Sidebar>
-          {/* </Col> */}
-        </Row>
+          }
+          open={this.state.sidebarOpen}
+          docked={this.state.sidebarDocked}
+          onSetOpen={this.onSetSidebarOpen}
+        >
+        </Sidebar>
       </Container>
     )
   }

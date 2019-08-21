@@ -1,9 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
+
 body {
   background-color: whitesmoke;
   /* text-align: center; */
   color: black
+  font-family: 'Open Sans', sans-serif;
 }
-
   root {
     position: "absolute",
     top: 0,
@@ -69,6 +71,11 @@ body {
   background-color: #4CAF50; /* Add a green color to the "active/current" link */
   color: white;
 }
+.logo {
+  float: left
+  width: 20px;
+  height: 20px
+}
 .card-header {
   float: right;
   overflow: hidden;
@@ -81,12 +88,25 @@ body {
 .card-footer {
   float: right;
 }
-.order-button {
+.order-by {
   float: right;
-}
-#dropdown-item-button {
-  float: right
+  text-align: right
 }
 .music-button {
   float: right
+}
+.artist-list {
+  position: relative;
+  text-indent: -1em;
+  white-space: nowrap;
+}
+.plays-list {
+  position: relative;
+  text-indent: -1em;
+  white-space: nowrap;
+}
+.songs-list {
+  position: relative;
+  text-indent: -1em;
+  white-space: nowrap;
 }

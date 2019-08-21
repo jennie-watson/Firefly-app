@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row, Container, Button, Card } from 'react-bootstrap'
+import { Col, Row, Container, ButtonToolbar, Button, Card } from 'react-bootstrap'
 
 class Header extends React.Component {
   render () {
@@ -12,8 +12,12 @@ class Header extends React.Component {
                 <Card.Body>
                   <Card.Title>Welcome!</Card.Title>
                   <Card.Text>Before you get too carried away, do you agree to us collecting anonimized statistics about your usage of our app?</Card.Text>
-                  <Button>Disagree</Button>
-                  <Button>I agree</Button>
+                  <ButtonToolbar className="stats-button">
+                    <Button type="submit">&#10005; I Disagree</Button>
+                    &nbsp;
+                    &nbsp;
+                    <Button type="submit"> &#10003; I Agree</Button>
+                  </ButtonToolbar>
                 </Card.Body>
               </Card.Header>
             </Card>

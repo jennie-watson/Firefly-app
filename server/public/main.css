@@ -56,7 +56,7 @@ body {
   font-family: sans-serif;
   font-weight: 300;
   /* width: 200px; */
-  width: 30%;
+  width: 35%;
   height: 100%;
   float: left;
   background-color: #eee; /*Grey background color */
@@ -75,11 +75,26 @@ body {
   float: left
   width: 20px;
   height: 20px
+  display: inline-flex;
+  flex-direction: row;
+}
+.sidebar-header {
+  display: inline;
 }
 .card-header {
+  background-color: #D6EBF3;
   float: right;
   overflow: hidden;
   text-align: center;
+  fill: #333333;
+  font-family: OpenSans-Regular, Open Sans; 
+  font-size: 20; 
+  font-weight: normal;
+}
+.stats-button {
+  display: flex; 
+  justify-content: center; 
+  border-radius: 40%;
 }
 .card-main {
   float: right;

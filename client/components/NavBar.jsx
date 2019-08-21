@@ -36,9 +36,10 @@ class NavBar extends React.Component {
 
   render () {
     return (
-      <Container className='vertical-sidebar'>
-        <Sidebar
-          sidebar={
+      <div className="wrapper">
+        <Container className='vertical-sidebar'>
+          <Sidebar
+            sidebar={
         <>
         <div className="container">
           <div className="sidebar-header">
@@ -54,13 +55,14 @@ class NavBar extends React.Component {
           <Nav.Link eventKey="/logout">Logout</Nav.Link>
         </div>
         </>
-          }
-          open={this.state.sidebarOpen}
-          docked={this.state.sidebarDocked}
-          onSetOpen={this.onSetSidebarOpen}
-        >
-        </Sidebar>
-      </Container>
+            }
+            open={this.state.sidebarOpen}
+            docked={this.state.sidebarDocked}
+            onSetOpen={this.onSetSidebarOpen}
+          >
+          </Sidebar>
+        </Container>
+      </div>
     )
   }
 }

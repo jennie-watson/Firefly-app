@@ -1,0 +1,92 @@
+body {
+  background-color: whitesmoke;
+  /* text-align: center; */
+  color: black
+}
+
+  root {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    overflow: "hidden"
+  }
+  sidebar {
+    zIndex: 2,
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    transition: "transform .3s ease-out",
+    WebkitTransition: "-webkit-transform .3s ease-out",
+    willChange: "transform",
+    overflowY: "auto"
+  }
+  content {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    overflowY: "auto",
+    WebkitOverflowScrolling: "touch",
+    transition: "left .3s ease-out, right .3s ease-out"
+  }
+  overlay {
+    zIndex: 1,
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    opacity: 0,
+    visibility: "hidden",
+    transition: "opacity .3s ease-out, visibility .3s ease-out",
+    backgroundColor: "rgba(0,0,0,.3)"
+  }
+  dragHandle {
+    zIndex: 1,
+    position: "fixed",
+    top: 0,
+    bottom: 0
+  }
+.vertical-sidebar {
+  font-family: sans-serif;
+  font-weight: 300;
+  /* width: 200px; */
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-color: #eee; /*Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  text-decoration: none; /* Remove underline from links */
+}
+.vertical-sidebar .nav-link:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+.vertical-sidebar .nav-link:active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+.card-header {
+  float: right;
+  overflow: hidden;
+  text-align: center;
+}
+.card-main {
+  float: right;
+  text-align: center
+}
+.card-footer {
+  float: right;
+}
+.order-button {
+  float: right;
+}
+#dropdown-item-button {
+  float: right
+}
+.music-button {
+  float: right
+}

@@ -36,31 +36,34 @@ class NavBar extends React.Component {
 
   render () {
     return (
-      <Container className='vertical-sidebar'>
-        <Sidebar
-          sidebar={
+      <div id="vertical-sidebar">
+        <Container>
+          <Sidebar
+            sidebar={
         <>
         <div className="container">
-          <div className="sidebar-header">
+          <div className="nav-header">
             <Logo />
             <b>Data Dashboard</b>
           </div>
-          {/* <img src={require('../../server/public/Images/ff_logo.png' /> */}
-          <Nav.Link eventKey="/home">Overview</Nav.Link>
-          <Nav.Link eventKey="/animals">Animals</Nav.Link>
-          <Nav.Link eventKey="/food">Food</Nav.Link>
-          <Nav.Link eventKey="/music">Music</Nav.Link>
-          <Nav.Link eventKey="/settings">Settings</Nav.Link>
-          <Nav.Link eventKey="/logout">Logout</Nav.Link>
+          <div className="nav-links">
+            <Nav.Link eventKey="/home">Overview</Nav.Link>
+            <Nav.Link eventKey="/animals">Animals</Nav.Link>
+            <Nav.Link eventKey="/food">Food</Nav.Link>
+            <Nav.Link eventKey="/music">Music</Nav.Link>
+            <Nav.Link eventKey="/settings">Settings</Nav.Link>
+            <Nav.Link eventKey="/logout">Logout</Nav.Link>
+          </div>
         </div>
         </>
-          }
-          open={this.state.sidebarOpen}
-          docked={this.state.sidebarDocked}
-          onSetOpen={this.onSetSidebarOpen}
-        >
-        </Sidebar>
-      </Container>
+            }
+            open={this.state.sidebarOpen}
+            docked={this.state.sidebarDocked}
+            onSetOpen={this.onSetSidebarOpen}
+          >
+          </Sidebar>
+        </Container>
+      </div>
     )
   }
 }

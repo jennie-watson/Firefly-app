@@ -1,66 +1,14 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
-
 body {
-  background-color: whitesmoke;
-  /* text-align: center; */
-  color: black
-  font-family: 'Open Sans', sans-serif;
+  color: black;
 }
-  root {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    overflow: "hidden"
-  }
-  sidebar {
-    zIndex: 2,
-    position: "absolute",
-    top: 0,
-    bottom: 0,
-    transition: "transform .3s ease-out",
-    WebkitTransition: "-webkit-transform .3s ease-out",
-    willChange: "transform",
-    overflowY: "auto"
-  }
-  content {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    overflowY: "auto",
-    WebkitOverflowScrolling: "touch",
-    transition: "left .3s ease-out, right .3s ease-out"
-  }
-  overlay {
-    zIndex: 1,
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    opacity: 0,
-    visibility: "hidden",
-    transition: "opacity .3s ease-out, visibility .3s ease-out",
-    backgroundColor: "rgba(0,0,0,.3)"
-  }
-  dragHandle {
-    zIndex: 1,
-    position: "fixed",
-    top: 0,
-    bottom: 0
-  }
-.vertical-sidebar {
+#vertical-sidebar {
+  color: #063647;
   font-family: sans-serif;
   font-weight: 300;
-  /* width: 200px; */
-  width: 30%;
-  height: 100%;
+  width: "200"; 
+  height: "839";
   float: left;
-  background-color: #eee; /*Grey background color */
-  color: black; /* Black text color */
+  color: white; /* Black text color */
   display: block; /* Make the links appear below each other */
   text-decoration: none; /* Remove underline from links */
 }
@@ -72,41 +20,139 @@ body {
   color: white;
 }
 .logo {
-  float: left
+  float: left;
   width: 20px;
-  height: 20px
+  height: 20px;
+  display: inline-flex;
+  flex-direction: row;
 }
 .card-header {
+  background-color: #D6EBF3;
   float: right;
   overflow: hidden;
   text-align: center;
+  color: #333333;
+  font-family: OpenSans-Regular, Open Sans; 
+  font-size: 20; 
+  font-weight: normal;
+}
+.stats-button {
+  display: flex; 
+  justify-content: center;
 }
 .card-main {
   float: right;
-  text-align: center
+  text-align: center;
+  background-color: #D8D8D8;
+  font-family: OpenSans-Regular, Open Sans; 
+  font-size: 20; 
+  font-weight: normal;
 }
-.card-footer {
-  float: right;
+
+/* FONTS */
+.nav-header {
+  display: inline;
+  color: "#FFFFFF"; 
+  font-family: "OpenSans-SemiBold, Open Sans";
+  font-size: "16"; 
+  font-weight: "500"
+}
+.nav-links {
+  opacity: 0.6; 
+  font-family: OpenSans-Light, Open Sans;
+  font-size: 18; 
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.header-title {
+  color: #333333; 
+  font-family: OpenSans-Regular, Open Sans;
+  font-size: 20;
+  font-weight: normal;
+}
+.header-text {
+  color:#333333;
+  font-family: OpenSans-Regular, Open Sans; 
+  font-size: 16; 
+  font-weight: normal;
+}
+
+.stats-button1 {
+  font-family: OpenSans-Regular, Open Sans; 
+  font-size: 18;
+  font-weight: normal;
+  color: #479CBA;
+  background-color: #FFFFFF;
+}
+.stats-button2 {
+  font-family: OpenSans-Regular, Open Sans;
+  font-size: 18; 
+  font-weight: normal; 
+  color: #FFFFFF;
+  background-color: #479CBA;
+}
+.main-title {
+  text-align: left;
+  font-family: OpenSans-Regular, Open Sans;
+  font-size:24;
+  font-weight: normal;
+  color: #4A4A4A;
+}
+.main-text {
+  color:#4A4A4A;
+  font-family: OpenSans-Regular, Open Sans; 
+  font-size: 18; 
+  font-weight: normal; 
+  opacity: 0.900000036;
+}
+.music-tabs {
+  font-family: OpenSans-Regular, Open Sans;
+  font-size: 16;
+  font-weight: normal; 
+  color: #479CBA;
+}
+.music-title {
+  opacity: 1; 
+  font-family: HelveticaNeue-Bold, Helvetica Neue;
+  font-size: 16;
+  font-weight: bold; 
+  letter-spacing: 1; 
+  color: #D2D2D2;
 }
 .order-by {
   float: right;
-  text-align: right
+  text-align: right;
+  font-family: OpenSans-Regular, Open Sans;
+  font-size: 16; 
+  font-weight: normal;
+  color: #333333;
+}
+.dropdown-item-button {
+  font-family: OpenSans-Regular, Open Sans;
+  font-size: 16;
+  font-weight: normal;
+  float: right;
+  color: #479CBA;
+  background-color: #FFFFFF;
+}
+.artist-list .plays-list .songs-list {
+  position: relative;
+  white-space: nowrap;
+  font-family: HelveticaNeue, Helvetica Neue;
+  font-size: 16; 
+  font-weight: normal;
+  color: #373A3C;
 }
 .music-button {
-  float: right
+  float: right;
+  font-family: OpenSans-Regular, Open Sans; font-size: 18; 
+  font-weight: normal;
+  color: #FFFFFF;
+  background-color: #479CBA;
 }
-.artist-list {
-  position: relative;
-  text-indent: -1em;
-  white-space: nowrap;
-}
-.plays-list {
-  position: relative;
-  text-indent: -1em;
-  white-space: nowrap;
-}
-.songs-list {
-  position: relative;
-  text-indent: -1em;
-  white-space: nowrap;
+.card-footer {
+  float: right;
+  font-family: OpenSans-Regular, Open Sans; 
+  font-size: 20; 
+  font-weight: normal;
 }

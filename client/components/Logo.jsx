@@ -1,10 +1,9 @@
 import React from 'react'
-import logo from '../../server/public/Images/ff_logo.png' // Tell Webpack this JS file uses this image
+import logo from '../../server/public/Images/ff_logo.png'
 
-console.log(logo) // /logo.84287d09.png
+console.log(logo)
 
 function Logo () {
-  // Import result is the URL of your image
   return <img src={logo} alt="Logo" />
 }
 

@@ -1,6 +1,5 @@
 import React from 'react'
 
-// cat videos watched
 const AnimalSvg = props => (
   <svg {...props}>
     <g fill="#FFF">

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button, Card, Container, Col, Row, Nav, DropdownButton, Dropdown, ListGroup, MDBIcon } from 'react-bootstrap'
-import { i } from 'react-icons/md'
+import { Button, Card, Container, Col, Row, Nav, DropdownButton, Dropdown, ListGroup } from 'react-bootstrap'
 
 class Music extends React.Component {
   render () {

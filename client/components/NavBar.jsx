@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Nav } from 'react-bootstrap'
 import Sidebar from 'react-sidebar'
+// import logo from './Logo'
 
 const mql = window.matchMedia(`(min-width: 800px)`)
 
@@ -42,6 +43,7 @@ class NavBar extends React.Component {
         <>
           <Nav-Headers className="nav-text">
             <b>Data Dashboard</b>
+            {/* <img src={logo} alt="Logo" /> */}
             &nbsp;
             &nbsp;
           </Nav-Headers>

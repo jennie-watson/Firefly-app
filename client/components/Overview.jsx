@@ -8,7 +8,6 @@ class Overview extends React.Component {
       <Container className="container-main">
         <Row>
           <Col>
-            {/* <Card className="card-main"> */}
             <Card.Body className="card-main">
               <Card.Title className="main-title">Overview</Card.Title>
               {/* <AnimalSvg classname="animal-svg" /> */}
@@ -19,7 +18,6 @@ class Overview extends React.Component {
               </div>
               <Card.Title className="main-title">Top Music</Card.Title>
             </Card.Body>
-            {/* </Card> */}
           </Col>
         </Row>
       </Container>

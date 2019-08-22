@@ -21,13 +21,6 @@ Main = #D8D8D8 */
 .vertical-sidebar .nav-link:hover {
   background-color: #ccc !important;
 }
-.logo {
-  float: left;
-  width: 20px;
-  height: 20px;
-  display: inline-flex;
-  flex-direction: row;
-}
 .card-header {
   background-color: #D6EBF3 !important;
   float: right;
@@ -37,12 +30,13 @@ Main = #D8D8D8 */
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  width: 100%;
+  width: 90%;
   padding: 0px !important;
 }
 .stats-button {
   display: flex; 
   justify-content: center;
+  color: #479CBA;
 }
 .container-main {
   float: right;
@@ -51,7 +45,7 @@ Main = #D8D8D8 */
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  width: 100%;
+  width: 90%;
 }
 .card-main {
   background-color: #D8D8D8 !important;
@@ -63,16 +57,9 @@ Main = #D8D8D8 */
 .nav-text {
   color: #FFFFFF; 
   font-family: OpenSans-SemiBold, Open Sans;
-  font-size: 16; 
+  font-size: 20; 
   font-weight: 500;
   float: left;
-}
-#nav-links {
-  opacity: 0.6; 
-  font-family: OpenSans-Light, Open Sans;
-  font-size: 18; 
-  font-weight: 300;
-  color: #FFFFFF !important;
 }
 .header-title {
   color: #333333; 
@@ -105,8 +92,9 @@ Main = #D8D8D8 */
   text-align: left;
   font-family: OpenSans-Regular, Open Sans;
   font-size: 24;
-  font-weight: normal;
+  font-weight: bold;
   color: #4A4A4A;
+  text-indent: 15px;
 }
 .main-text {
   color:#4A4A4A;
@@ -209,8 +197,8 @@ Main = #D8D8D8 */
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  padding: 5px 30px 5px !important;
-  width: 100%;
+  padding: 5px 30px 0px !important;
+  width: 90%;
 }
 .number {
   font-weight: bold

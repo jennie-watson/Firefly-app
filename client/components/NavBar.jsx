@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Nav } from 'react-bootstrap'
 import Sidebar from 'react-sidebar'
-import Logo from './Logo'
 
 const mql = window.matchMedia(`(min-width: 800px)`)
 
@@ -42,7 +41,6 @@ class NavBar extends React.Component {
             sidebar={
         <>
           <Nav-Headers className="nav-text">
-            <Logo />
             <b>Data Dashboard</b>
             &nbsp;
             &nbsp;
@@ -55,7 +53,7 @@ class NavBar extends React.Component {
             <Nav.Link eventKey="/settings">Settings</Nav.Link>
             <Nav.Link eventKey="/logout">Logout</Nav.Link>
           </div>
-          <p id="copyright">© FireFly 2019</p>
+          <h6 id="copyright">© FireFly 2019</h6>
         </>
             }
             open={this.state.sidebarOpen}

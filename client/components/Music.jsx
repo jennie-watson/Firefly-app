@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Card, Container, Col, Row, Nav, DropdownButton, Dropdown, ListGroup, MDBIcon } from 'react-bootstrap'
-import { ICON_NAME } from 'react-icons/md'
+import { i } from 'react-icons/md'
 
 class Music extends React.Component {
   render () {
@@ -27,7 +27,7 @@ class Music extends React.Component {
                   <Dropdown.Item as="button">Artist</Dropdown.Item>
                   <Dropdown.Item as="button">Songs</Dropdown.Item>
                   <Dropdown.Item as="button">Moods</Dropdown.Item>
-                </DropdownButton> 
+                </DropdownButton>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Card.Title className="order-by">Order by</Card.Title>
               </Col>

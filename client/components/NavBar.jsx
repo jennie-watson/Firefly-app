@@ -36,23 +36,24 @@ class NavBar extends React.Component {
 
   render () {
     return (
-      <div className="wrapper">
-        <Container className='vertical-sidebar'>
+      <div id="vertical-sidebar">
+        <Container>
           <Sidebar
             sidebar={
         <>
         <div className="container">
-          <div className="sidebar-header">
+          <div className="nav-header">
             <Logo />
             <b>Data Dashboard</b>
           </div>
-          {/* <img src={require('../../server/public/Images/ff_logo.png' /> */}
-          <Nav.Link eventKey="/home">Overview</Nav.Link>
-          <Nav.Link eventKey="/animals">Animals</Nav.Link>
-          <Nav.Link eventKey="/food">Food</Nav.Link>
-          <Nav.Link eventKey="/music">Music</Nav.Link>
-          <Nav.Link eventKey="/settings">Settings</Nav.Link>
-          <Nav.Link eventKey="/logout">Logout</Nav.Link>
+          <div className="nav-links">
+            <Nav.Link eventKey="/home">Overview</Nav.Link>
+            <Nav.Link eventKey="/animals">Animals</Nav.Link>
+            <Nav.Link eventKey="/food">Food</Nav.Link>
+            <Nav.Link eventKey="/music">Music</Nav.Link>
+            <Nav.Link eventKey="/settings">Settings</Nav.Link>
+            <Nav.Link eventKey="/logout">Logout</Nav.Link>
+          </div>
         </div>
         </>
             }

@@ -730,7 +730,7 @@
                 </g>
             </g>
         </g>
-        <text id="Overview" font-family="OpenSans-Regular, Open Sans" font-size="24" font-weight="normal" fill="#4A4A4A">
+        <text id="view" font-family="OpenSans-Regular, Open Sans" font-size="24" font-weight="normal" fill="#4A4A4A">
             <tspan x="230" y="228">Overview</tspan>
         </text>
     </g>

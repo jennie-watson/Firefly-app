@@ -1,4 +1,5 @@
 import React from 'react'
+// import AnimalSvg from './OverviewIcons'
 import { Container, Col, Row, Card } from 'react-bootstrap'
 
 class Overview extends React.Component {
@@ -9,10 +10,14 @@ class Overview extends React.Component {
           <Col>
             <Card className="d-block">
               <Card.Body>
-                <Card.Title>Overview</Card.Title>
-                <Card.Text>Cat videos watched</Card.Text>
-                <Card.Text>Slices of pizza in the fridge</Card.Text>
-                <Card.Text>Favourite songs beginning with the letter `A`</Card.Text>
+                <Card.Title className="main-title">Overview</Card.Title>
+                {/* <AnimalSvg /> */}
+                <div className="main-text">
+                  <Card.Text>Cat videos watched</Card.Text>
+                  <Card.Text>Slices of pizza in the fridge</Card.Text>
+                  <Card.Text>Favourite songs beginning with the letter `A`</Card.Text>
+                </div>
+                <Card.Title className="main-title">Top Music</Card.Title>
               </Card.Body>
             </Card>
           </Col>

@@ -1,23 +1,15 @@
-body {
-  color: black;
-}
 #vertical-sidebar {
   color: #063647;
   font-family: sans-serif;
   font-weight: 300;
-  width: "200"; 
-  height: "839";
+  width: 200; 
+  height: 839;
   float: left;
-  color: white; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  text-decoration: none; /* Remove underline from links */
+  display: block;
+  text-decoration: none;
 }
 .vertical-sidebar .nav-link:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
-}
-.vertical-sidebar .nav-link:active {
-  background-color: #4CAF50; /* Add a green color to the "active/current" link */
-  color: white;
+  background-color: #ccc;
 }
 .logo {
   float: left;
@@ -49,13 +41,14 @@ body {
   font-weight: normal;
 }
 
-/* FONTS */
+/* FONTS & FONT COLORS */
 .nav-header {
-  display: inline;
-  color: "#FFFFFF"; 
-  font-family: "OpenSans-SemiBold, Open Sans";
-  font-size: "16"; 
-  font-weight: "500"
+  /* display: inline; */
+  color: black; 
+  font-family: OpenSans-SemiBold, Open Sans;
+  font-size: 16; 
+  font-weight: 500;
+  float: left;
 }
 .nav-links {
   opacity: 0.6; 
@@ -155,4 +148,14 @@ body {
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
+}
+.number {
+  font-weight: bold
+}
+#copyright {
+  opacity: 0.25;
+  font-family: OpenSans-SemiBold, Open Sans;
+  font-size: 5; 
+  font-weight: 500; 
+  fill: #FFFFFF;
 }

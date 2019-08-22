@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, Text } from 'react-bootstrap'
+import { Container, Nav } from 'react-bootstrap'
 import Sidebar from 'react-sidebar'
 import Logo from './Logo'
 
@@ -54,6 +54,7 @@ class NavBar extends React.Component {
             <Nav.Link eventKey="/settings">Settings</Nav.Link>
             <Nav.Link eventKey="/logout">Logout</Nav.Link>
           </div>
+          <p id="copyright">© FireFly 2019</p>
         </div>
         </>
             }

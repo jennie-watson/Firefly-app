@@ -1,5 +1,5 @@
 import React from 'react'
-// import AnimalSvg from './OverviewIcons'
+// import AnimalSvg from './AnimalSvg'
 import { Container, Col, Row, Card } from 'react-bootstrap'
 
 class Overview extends React.Component {
@@ -11,7 +11,7 @@ class Overview extends React.Component {
             <Card className="d-block">
               <Card.Body>
                 <Card.Title className="main-title">Overview</Card.Title>
-                {/* <AnimalSvg /> */}
+                {/* <AnimalSvg classname="animal-svg" /> */}
                 <div className="main-text">
                   <Card.Text>Cat videos watched</Card.Text>
                   <Card.Text>Slices of pizza in the fridge</Card.Text>

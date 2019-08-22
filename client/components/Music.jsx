@@ -52,9 +52,10 @@ class Music extends React.Component {
                     <Col>
                       <Card.Title className="songs-title">SONGS</Card.Title>
                       <ListGroup variant="flush" className="songs-list">
-                        <ListGroup.Item>189 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i className="material-icons">delete</i></ListGroup.Item>
-                        <ListGroup.Item>244 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i className="material-icons">delete</i></ListGroup.Item>
-                        <ListGroup.Item>12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i className="material-icons">delete</i></ListGroup.Item>
+                        <ListGroup.Item>189 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b className="delete-icons">delete</b>&nbsp;&nbsp;&nbsp;<b className="share-icons">share</b></ListGroup.Item>
+                        <ListGroup.Item>244 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b className="delete-icons">delete</b>&nbsp;&nbsp;&nbsp;<b className="share-icons">share</b></ListGroup.Item>
+                        <ListGroup.Item>12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b className="delete-icons">delete</b>&nbsp;&nbsp;&nbsp;<b className="share-icons">share</b></ListGroup.Item>
+                        
                       </ListGroup>
                     </Col>
                   </Row>

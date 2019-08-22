@@ -47,7 +47,7 @@
 }
 
 
-/* FONTS & FONT COLORS */
+/* FONTS & COLORS */
 .nav-text {
   color: #FFFFFF; 
   font-family: OpenSans-SemiBold, Open Sans;
@@ -204,6 +204,21 @@
   font-weight: 500; 
   fill: #FFFFFF;
 }
-.material-icons {
-  color: red;
+
+/* Icon & SVG Colors */
+.delete-icons {
+  font-family: MaterialIcons-Regular, Material Icons;
+  font-size: 23; 
+  font-weight: normal; 
+  color: #DE1428;
 }
+.share-icons {
+  font-family: MaterialIcons-Regular, Material Icons;
+  font-size: 23; 
+  font-weight: normal; 
+  color: #479CBA;
+}
+.animal-svg {
+  fill: green;
+}
+

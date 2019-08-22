@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, Container, Col, Row, Nav, DropdownButton, Dropdown, ListGroup } from 'react-bootstrap'
-import Button from 'react-bootstrap/Button'
+import { Button, Card, Container, Col, Row, Nav, DropdownButton, Dropdown, ListGroup, MDBIcon } from 'react-bootstrap'
+import { ICON_NAME } from 'react-icons/md'
 
 class Music extends React.Component {
   render () {
@@ -9,7 +9,6 @@ class Music extends React.Component {
         <Row>
           <Col>
             <Card>
-              {/* <Card.Footer> */}
               <Col>
                 <Nav variant="tabs" defaultActiveKey="#first" className="music-tabs">
                   <Nav.Item>
@@ -24,21 +23,19 @@ class Music extends React.Component {
                 </Nav>
               </Col>
               <Col>
-                <DropdownButton className="dropdown-item-button" title="Most played">
+                <DropdownButton id="dropdown-item-button" title="Most played">
                   <Dropdown.Item as="button">Artist</Dropdown.Item>
                   <Dropdown.Item as="button">Songs</Dropdown.Item>
                   <Dropdown.Item as="button">Moods</Dropdown.Item>
-                </DropdownButton>
-                    &nbsp;
-                    &nbsp;
+                </DropdownButton> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Card.Title className="order-by">Order by</Card.Title>
               </Col>
-              {/* </Card.Footer> */}
               <Card.Body>
                 <Container fluid>
                   <Row>
                     <Col>
-                      <Card.Title className="music-title"># ARTIST</Card.Title>
+                      <Card.Title className="artist-title"># ARTIST</Card.Title>
                       <ListGroup variant="flush" className="artist-list">
                         <ListGroup.Item><b className="number">1</b>&nbsp;&nbsp;&nbsp;The Wiggles</ListGroup.Item>
                         <ListGroup.Item><b className="number">2</b>&nbsp;&nbsp;&nbsp;Dolly Parton</ListGroup.Item>
@@ -46,7 +43,7 @@ class Music extends React.Component {
                       </ListGroup>
                     </Col>
                     <Col>
-                      <Card.Title className="music-title">PLAYS</Card.Title>
+                      <Card.Title className="plays-title">PLAYS</Card.Title>
                       <ListGroup variant="flush" className="plays-list">
                         <ListGroup.Item>86,340</ListGroup.Item>
                         <ListGroup.Item>86,333</ListGroup.Item>
@@ -54,11 +51,11 @@ class Music extends React.Component {
                       </ListGroup>
                     </Col>
                     <Col>
-                      <Card.Title className="music-title">SONGS</Card.Title>
+                      <Card.Title className="songs-title">SONGS</Card.Title>
                       <ListGroup variant="flush" className="songs-list">
-                        <ListGroup.Item>189</ListGroup.Item>
-                        <ListGroup.Item>244</ListGroup.Item>
-                        <ListGroup.Item>12</ListGroup.Item>
+                        <ListGroup.Item>189 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i className="material-icons">delete</i></ListGroup.Item>
+                        <ListGroup.Item>244 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i className="material-icons">delete</i></ListGroup.Item>
+                        <ListGroup.Item>12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i className="material-icons">delete</i></ListGroup.Item>
                       </ListGroup>
                     </Col>
                   </Row>

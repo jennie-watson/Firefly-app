@@ -13,7 +13,7 @@ Main = #D8D8D8 */
   font-family: sans-serif;
   font-weight: 300;
   width: 168px; 
-  height: 725px;
+  height: 700px;
   float: left;
   display: block;
   text-decoration: none;
@@ -38,7 +38,7 @@ Main = #D8D8D8 */
   font-size: 20; 
   font-weight: normal;
   width: 100%;
-  padding: 0px 0px !important;
+  padding: 0px !important;
 }
 .stats-button {
   display: flex; 
@@ -51,15 +51,16 @@ Main = #D8D8D8 */
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  padding: 0px 0px !important;
+  width: 100%;
 }
 .card-main {
   background-color: #D8D8D8 !important;
+  padding: 0px !important;
 }
 
 
 /* FONTS & FONT COLORS */
-.nav-header {
+.nav-text {
   color: #FFFFFF; 
   font-family: OpenSans-SemiBold, Open Sans;
   font-size: 16; 
@@ -71,7 +72,7 @@ Main = #D8D8D8 */
   font-family: OpenSans-Light, Open Sans;
   font-size: 18; 
   font-weight: 300;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 .header-title {
   color: #333333; 
@@ -120,13 +121,37 @@ Main = #D8D8D8 */
   font-weight: normal; 
   color: #479CBA;
 }
-.music-title {
+.artist-title {
   opacity: 1; 
   font-family: HelveticaNeue-Bold, Helvetica Neue;
   font-size: 16;
   font-weight: bold; 
   letter-spacing: 1; 
   color: #D2D2D2;
+  text-align: left;
+  text-indent: 5%;
+}
+.plays-title {
+  opacity: 1; 
+  font-family: HelveticaNeue-Bold, Helvetica Neue;
+  font-size: 16;
+  font-weight: bold; 
+  letter-spacing: 1; 
+  color: #D2D2D2;
+  text-align: center;
+}
+.songs-title {
+  opacity: 1; 
+  font-family: HelveticaNeue-Bold, Helvetica Neue;
+  font-size: 16;
+  font-weight: bold; 
+  letter-spacing: 1; 
+  color: #D2D2D2;
+  text-align: center;
+  text-indent: 22.5%;
+}
+.list-group-item {
+  padding: 10px 15px !important;
 }
 .order-by {
   float: right;
@@ -136,21 +161,40 @@ Main = #D8D8D8 */
   font-weight: normal;
   color: #333333;
 }
-.dropdown-item-button {
+#dropdown-item-button {
   font-family: OpenSans-Regular, Open Sans;
   font-size: 16;
   font-weight: normal;
   float: right;
-  color: #479CBA;
+  color: #479CBA !important;
   background-color: #FFFFFF !important;
 }
-.artist-list .plays-list .songs-list {
+.artist-list {
   position: relative;
   white-space: nowrap;
   font-family: HelveticaNeue, Helvetica Neue;
   font-size: 16; 
   font-weight: normal;
   color: #373A3C;
+  text-align: left;
+}
+.plays-list {
+  position: relative;
+  white-space: nowrap;
+  font-family: HelveticaNeue, Helvetica Neue;
+  font-size: 16; 
+  font-weight: normal;
+  color: #373A3C;
+  text-align: center;
+}
+.songs-list {
+  position: relative;
+  white-space: nowrap;
+  font-family: HelveticaNeue, Helvetica Neue;
+  font-size: 16; 
+  font-weight: normal;
+  color: #373A3C;
+  text-align: right;
 }
 .music-button {
   float: right;
@@ -158,13 +202,15 @@ Main = #D8D8D8 */
   font-weight: normal;
   color: #FFFFFF;
   background-color: #479CBA !important;
+  margin-top: 20px;
 }
 .card-footer {
   float: right;
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  padding: 0px 20px !important;
+  padding: 5px 30px 5px !important;
+  width: 100%;
 }
 .number {
   font-weight: bold
@@ -175,4 +221,7 @@ Main = #D8D8D8 */
   font-size: 5; 
   font-weight: 500; 
   fill: #FFFFFF;
+}
+.material-icons {
+  color: red;
 }

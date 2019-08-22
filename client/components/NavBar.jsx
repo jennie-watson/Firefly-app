@@ -41,13 +41,13 @@ class NavBar extends React.Component {
           <Sidebar
             sidebar={
         <>
-          <div className="nav-header">
+          <Nav-Headers className="nav-text">
             <Logo />
             <b>Data Dashboard</b>
             &nbsp;
             &nbsp;
-          </div>
-          <div id="nav-links">
+          </Nav-Headers>
+          <div id="nav-text">
             <Nav.Link eventKey="/home">Overview</Nav.Link>
             <Nav.Link eventKey="/animals">Animals</Nav.Link>
             <Nav.Link eventKey="/food">Food</Nav.Link>

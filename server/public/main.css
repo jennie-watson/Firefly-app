@@ -1,15 +1,25 @@
+/* Background colors:
+Navbar = #063647
+Header = #D6EBF3
+Main = #D8D8D8 */
+
+
+#container-sidebar {
+  background-color: #063647 !important;
+}
 #vertical-sidebar {
-  color: #063647;
+  background-color: #063647 !important;
+  color: #FFFFFF !important;
   font-family: sans-serif;
   font-weight: 300;
-  width: 200; 
-  height: 839;
+  width: 168px; 
+  height: 725px;
   float: left;
   display: block;
   text-decoration: none;
 }
 .vertical-sidebar .nav-link:hover {
-  background-color: #ccc;
+  background-color: #ccc !important;
 }
 .logo {
   float: left;
@@ -19,7 +29,7 @@
   flex-direction: row;
 }
 .card-header {
-  background-color: #D6EBF3;
+  background-color: #D6EBF3 !important;
   float: right;
   overflow: hidden;
   text-align: center;
@@ -27,30 +37,36 @@
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
+  width: 100%;
+  padding: 0px 0px !important;
 }
 .stats-button {
   display: flex; 
   justify-content: center;
 }
-.card-main {
+.container-main {
   float: right;
   text-align: center;
-  background-color: #D8D8D8;
+  background-color: #D8D8D8 !important;
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
+  padding: 0px 0px !important;
 }
+.card-main {
+  background-color: #D8D8D8 !important;
+}
+
 
 /* FONTS & FONT COLORS */
 .nav-header {
-  /* display: inline; */
-  color: black; 
+  color: #FFFFFF; 
   font-family: OpenSans-SemiBold, Open Sans;
   font-size: 16; 
   font-weight: 500;
   float: left;
 }
-.nav-links {
+#nav-links {
   opacity: 0.6; 
   font-family: OpenSans-Light, Open Sans;
   font-size: 18; 
@@ -75,19 +91,19 @@
   font-size: 18;
   font-weight: normal;
   color: #479CBA;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
 }
 .stats-button2 {
   font-family: OpenSans-Regular, Open Sans;
   font-size: 18; 
   font-weight: normal; 
   color: #FFFFFF;
-  background-color: #479CBA;
+  background-color: #479CBA !important;
 }
 .main-title {
   text-align: left;
   font-family: OpenSans-Regular, Open Sans;
-  font-size:24;
+  font-size: 24;
   font-weight: normal;
   color: #4A4A4A;
 }
@@ -126,7 +142,7 @@
   font-weight: normal;
   float: right;
   color: #479CBA;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
 }
 .artist-list .plays-list .songs-list {
   position: relative;
@@ -141,13 +157,14 @@
   font-family: OpenSans-Regular, Open Sans; font-size: 18; 
   font-weight: normal;
   color: #FFFFFF;
-  background-color: #479CBA;
+  background-color: #479CBA !important;
 }
 .card-footer {
   float: right;
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
+  padding: 0px 20px !important;
 }
 .number {
   font-weight: bold

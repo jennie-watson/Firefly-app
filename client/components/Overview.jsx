@@ -5,10 +5,10 @@ import { Container, Col, Row, Card } from 'react-bootstrap'
 class Overview extends React.Component {
   render () {
     return (
-      <Container className="card-main">
+      <Container className="container-main">
         <Row>
           <Col>
-            <Card className="d-block">
+            <Card className="card-main">
               <Card.Body>
                 <Card.Title className="main-title">Overview</Card.Title>
                 {/* <AnimalSvg classname="animal-svg" /> */}

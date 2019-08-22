@@ -9,31 +9,31 @@ class Music extends React.Component {
         <Row>
           <Col>
             <Card>
-              <Card.Footer>
-                <Col>
-                  <Nav variant="tabs" defaultActiveKey="#first" className="music-tabs">
-                    <Nav.Item>
-                      <Nav.Link href="#first">Artists</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link href="#second">Songs</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link href="#third">Moods</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                </Col>
-                <Col>
-                  <DropdownButton className="dropdown-item-button" title="Most played">
-                    <Dropdown.Item as="button">Artist</Dropdown.Item>
-                    <Dropdown.Item as="button">Songs</Dropdown.Item>
-                    <Dropdown.Item as="button">Moods</Dropdown.Item>
-                  </DropdownButton>
+              {/* <Card.Footer> */}
+              <Col>
+                <Nav variant="tabs" defaultActiveKey="#first" className="music-tabs">
+                  <Nav.Item>
+                    <Nav.Link href="#first">Artists</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link href="#second">Songs</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link href="#third">Moods</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+              </Col>
+              <Col>
+                <DropdownButton className="dropdown-item-button" title="Most played">
+                  <Dropdown.Item as="button">Artist</Dropdown.Item>
+                  <Dropdown.Item as="button">Songs</Dropdown.Item>
+                  <Dropdown.Item as="button">Moods</Dropdown.Item>
+                </DropdownButton>
                     &nbsp;
                     &nbsp;
-                  <Card.Title className="order-by">Order by</Card.Title>
-                </Col>
-              </Card.Footer>
+                <Card.Title className="order-by">Order by</Card.Title>
+              </Col>
+              {/* </Card.Footer> */}
               <Card.Body>
                 <Container fluid>
                   <Row>

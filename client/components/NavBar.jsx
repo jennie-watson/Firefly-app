@@ -37,16 +37,17 @@ class NavBar extends React.Component {
   render () {
     return (
       <div id="vertical-sidebar">
-        <Container>
+        <Container id="container-sidebar">
           <Sidebar
             sidebar={
         <>
-        <div className="container">
           <div className="nav-header">
             <Logo />
             <b>Data Dashboard</b>
+            &nbsp;
+            &nbsp;
           </div>
-          <div className="nav-links">
+          <div id="nav-links">
             <Nav.Link eventKey="/home">Overview</Nav.Link>
             <Nav.Link eventKey="/animals">Animals</Nav.Link>
             <Nav.Link eventKey="/food">Food</Nav.Link>
@@ -55,7 +56,6 @@ class NavBar extends React.Component {
             <Nav.Link eventKey="/logout">Logout</Nav.Link>
           </div>
           <p id="copyright">© FireFly 2019</p>
-        </div>
         </>
             }
             open={this.state.sidebarOpen}

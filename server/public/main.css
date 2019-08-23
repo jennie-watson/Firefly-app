@@ -160,6 +160,9 @@
   color: #373A3C;
   text-align: left;
 }
+.artist {
+  word-wrap: break-word;
+}
 .plays-list {
   position: relative;
   white-space: nowrap;

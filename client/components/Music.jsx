@@ -4,7 +4,7 @@ import { Button, Card, Container, Col, Row, Nav, DropdownButton, Dropdown, ListG
 class Music extends React.Component {
   render () {
     return (
-      <Container className="card-footer">
+      <Container className="container-footer">
         <Row>
           <Col>
             <Card>
@@ -36,9 +36,9 @@ class Music extends React.Component {
                     <Col>
                       <Card.Title className="artist-title"># ARTIST</Card.Title>
                       <ListGroup variant="flush" className="artist-list">
-                        <ListGroup.Item><b className="number">1</b>&nbsp;&nbsp;&nbsp;The Wiggles</ListGroup.Item>
-                        <ListGroup.Item><b className="number">2</b>&nbsp;&nbsp;&nbsp;Dolly Parton</ListGroup.Item>
-                        <ListGroup.Item><b className="number">3</b>&nbsp;&nbsp;&nbsp;Wellington International Ukelele Orchestra</ListGroup.Item>
+                        <ListGroup.Item className="artist"><b className="number">1</b>&nbsp;&nbsp;&nbsp;The Wiggles</ListGroup.Item>
+                        <ListGroup.Item className="artist"><b className="number">2</b>&nbsp;&nbsp;&nbsp;Dolly Parton</ListGroup.Item>
+                        <ListGroup.Item className="artist"><b className="number">3</b>&nbsp;&nbsp;&nbsp;Wellington International Ukelele Orchestra</ListGroup.Item>
                       </ListGroup>
                     </Col>
                     <Col>
@@ -55,7 +55,6 @@ class Music extends React.Component {
                         <ListGroup.Item>189 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b className="delete-icons">delete</b>&nbsp;&nbsp;&nbsp;<b className="share-icons">share</b></ListGroup.Item>
                         <ListGroup.Item>244 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b className="delete-icons">delete</b>&nbsp;&nbsp;&nbsp;<b className="share-icons">share</b></ListGroup.Item>
                         <ListGroup.Item>12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b className="delete-icons">delete</b>&nbsp;&nbsp;&nbsp;<b className="share-icons">share</b></ListGroup.Item>
-                        
                       </ListGroup>
                     </Col>
                   </Row>

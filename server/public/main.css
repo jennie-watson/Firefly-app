@@ -1,21 +1,24 @@
-#container-sidebar {
-  background-color: #063647 !important;
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
-#vertical-sidebar {
+.vertical-sidebar {
   background-color: #063647 !important;
   color: #FFFFFF !important;
-  font-family: sans-serif;
-  font-weight: 300;
-  width: 168px; 
-  height: 700px;
-  float: left;
-  display: block;
   text-decoration: none;
+  min-width: 500px;
+  min-height: 100%;
+  float: left;
+  clear: both;
+  list-style: none;
+  width: 20%;
+  position: fixed;
+  margin-bottom: -3000px; 
+  padding-bottom:3000px;
+  overflow: hidden;
 }
-.vertical-sidebar .nav-link:hover {
-  background-color: #ccc !important;
-}
-.card-header {
+.container-header {
   background-color: #D6EBF3 !important;
   float: right;
   overflow: hidden;
@@ -24,8 +27,9 @@
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  width: 100%;
+  width: 80%;
   padding: 0px !important;
+  overflow: hidden;
 }
 .stats-button {
   display: flex; 
@@ -39,22 +43,16 @@
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  width: 100%;
+  width: 80%;
+  overflow: hidden;
+  padding: 0px !important;
 }
 .card-main {
   background-color: #D8D8D8 !important;
   padding: 0px !important;
 }
 
-
 /* FONTS & COLORS */
-.nav-text {
-  color: #FFFFFF; 
-  font-family: OpenSans-SemiBold, Open Sans;
-  font-size: 20; 
-  font-weight: 500;
-  float: left;
-}
 .header-title {
   color: #333333; 
   font-family: OpenSans-Regular, Open Sans;
@@ -159,8 +157,6 @@
   font-weight: normal;
   color: #373A3C;
   text-align: left;
-}
-.artist {
   word-wrap: break-word;
 }
 .plays-list {
@@ -189,23 +185,19 @@
   background-color: #479CBA !important;
   margin-top: 20px;
 }
-.card-footer {
+.container-footer {
   float: right;
   font-family: OpenSans-Regular, Open Sans; 
   font-size: 20; 
   font-weight: normal;
-  padding: 5px 30px 0px !important;
-  width: 100%;
+  width: 80%;
+  overflow: hidden;
+  --padding: 0px 30px !important;;
+  background-color: #D8D8D8;
+  padding: var(--padding);
 }
 .number {
   font-weight: bold
-}
-#copyright {
-  opacity: 0.25;
-  font-family: OpenSans-SemiBold, Open Sans;
-  font-size: 5; 
-  font-weight: 500; 
-  fill: #FFFFFF;
 }
 
 /* Icon & SVG Colors */

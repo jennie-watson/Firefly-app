@@ -4,7 +4,7 @@ import { Col, Row, Container, ButtonToolbar, Button, Card } from 'react-bootstra
 class Header extends React.Component {
   render () {
     return (
-      <Container className="card-header">
+      <Container className="container-header">
         <Row>
           <Col>
             <Card.Header>
